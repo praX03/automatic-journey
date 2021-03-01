@@ -198,9 +198,9 @@ html {
 	padding: 10%;
 }
 .map1 {
-	position: absolute;
-	height: fit-content;
-	width: auto;
+	background-size: cover;
+	height: 3363;
+	width: 800;
 }
 .info {
 	font-size: 4rem;
