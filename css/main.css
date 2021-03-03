@@ -1,306 +1,223 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
+* {
 	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-body {
-	line-height: 1;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-nav ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: none;
-}
-a {
 	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
 	text-decoration: none;
-}
-mark {
-	background-color: #ff9;
-	color: #000;
-	font-style: italic;
-	font-weight: bold;
-}
-del {
-	text-decoration: line-through;
-}
-abbr[title],
-dfn[title] {
-	border-bottom: 1px dotted;
-	cursor: help;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-input,
-select {
-	vertical-align: middle;
-}
-li {
 	list-style: none;
 }
 
-html,
 body {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center;
+	align-items: center; */
 }
-
-html {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.text {
+.heading {
+	font-family: sans-serif;
+	color: white;
 	position: absolute;
-	top: 50%;
-	right: 50%;
-	transform: translate(50%, -50%);
-	max-width: 100%;
-	font-family: "Open Sans", sans-serif;
-	font-size: 30px;
-	opacity: 30%;
-	background: #fff;
-	padding: 10%;
+	background-image: linear-gradient(to bottom right, red, yellow);
+	padding: 5px;
+	margin: auto;
+	top: 25%;
+	left: 40%;
+	right: 40%;
+	border-radius: 5px;
+	text-align: center;
 }
-.main {
+#btn {
+	border: 2px solid white;
+	padding: 30px 60px;
+	color: white;
+	cursor: pointer;
 	position: relative;
-	text-align: center;
-	font-size: 20px;
-	padding: 20%;
+	overflow: hidden;
+	font-size: 24px;
+	font-family: sans-serif;
+	transition: all 0.5s;
+	border-radius: 2px;
 }
 
-.header {
-	font-size: 50px;
-	text-align: center;
-}
-.map {
-	position: absolute;
-	height: 100%;
+#btn:before {
 	width: 100%;
-	opacity: 100%;
-	top: 50%;
-	right: 50%;
-	transform: translate(50%, -50%);
-	max-width: 100%;
-	padding: 10%;
-}
-.map1 {
-	background-size: cover;
-	height: 3363;
-	width: 800;
-}
-.info {
-	font-size: 4rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: -1.5px;
-	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color: black;
-	color: transparent;
-}
-
-/* Pop-up buttons begin */
-
-.flex-container {
-	height: 35%;
-	width: 92%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.pop-up-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
-	width: 25%;
-	font-size: 1.7rem;
-	/* Text outline begin */
-	font-weight: 900;
-	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color: white;
-	color: transparent;
-	/* Text outline end */
-	text-transform: uppercase;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	transition: all 1.5s ease-out; /* does not work */
-}
-
-.pop-up-button:nth-child(1) {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("https://images.pexels.com/photos/26346/pexels-photo-26346.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-.pop-up-button:nth-child(2) {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-.pop-up-button:nth-child(3) {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("https://images.pexels.com/photos/261246/pexels-photo-261246.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-.pop-up-button:nth-child(4) {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("https://images.pexels.com/photos/65647/sea-scotland-rest-rock-65647.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-}
-
-/* Pop-up buttons end */
-/* Pop-up second layer begin */
-
-.pop-up-overlay {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.9);
-	transition: opacity 500ms;
-	visibility: hidden;
-	color: visible;
-	opacity: 1;
-}
-
-.pop-up-overlay:target {
-	visibility: visible;
-	opacity: 1;
-}
-
-.pop-up {
-	text-align: center;
-}
-
-.pop-up p {
-	margin: 5% 10% 0 10%;
-}
-
-.pop-up a {
+	content: "";
+	margin: auto;
 	position: absolute;
-	color: white;
-	text-decoration: none;
-	font-size: 200%;
-	top: 3.5%;
-	right: 5%;
+	top: -100%;
+	left: -100%;
+	background: linear-gradient(to bottom right, red, yellow);
+	transition: all 0.5s;
+	z-index: -1;
+}
+/**#btn:after{
+			width: 100%;
+			height: 100%;
+			content: '';
+			margin: auto;
+			position: absolute;
+			top:  100%;
+			left: 100%;
+			background: #212121;
+			transition: all .5s;
+			z-index: -1;
+			
+	}**/
+#btn:hover {
+	color: black;
+}
+#btn:hover:before {
+	top: 0;
+	left: 0;
+} /**
+	#btn:hover:after{
+			transform: rotateY(90deg);
+
+	}**/
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.container {
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Pop-up second layer end */
+/* .particletext {
+	text-align: center;
+	font-size: 48px;
+	position: relative;
+
+	&.lines {
+		> .particle {
+			position: absolute;
+			background-color: rgba(244, 67, 54, 0.5);
+			animation: lines 3s linear infinite;
+		}
+	}
+}
+
+@keyframes bubbles {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		//show and hint at moving
+		opacity: 1;
+		transform: translate(0, -20%);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, -1000%); //Big bubbles move faster
+	}
+}
+@keyframes hearts {
+	0% {
+		opacity: 0;
+		transform: translate(0, 0%) rotate(45deg);
+	}
+	20% {
+		//show and hint at moving
+		opacity: 0.8;
+		transform: translate(0, -20%) rotate(45deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, -1000%) rotate(45deg); //Big hearts move faster
+	}
+}
+@keyframes lines {
+	0%,
+	50%,
+	100% {
+		transform: translateY(0%);
+	}
+	25% {
+		transform: translateY(100%);
+	}
+	75% {
+		transform: translateY(-100%);
+	}
+}
+@keyframes confetti {
+	0% {
+		opacity: 0;
+		transform: translateY(0%) rotate(0deg);
+	}
+	10% {
+		opacity: 1;
+	}
+	35% {
+		transform: translateY(-800%) rotate(270deg);
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(2000%) rotate(1440deg);
+	}
+}
+@keyframes fires {
+	0% {
+		transform: rotate(-70deg) translateY(0%);
+	}
+	25% {
+		transform: rotate(-20deg) translateY(-5%);
+		opacity: 1;
+	}
+	50% {
+		transform: rotate(-70deg) translateY(-10%);
+	}
+	75% {
+		transform: rotate(-20deg) translateY(-20%);
+	}
+	100% {
+		transform: rotate(-70deg) translateY(-40%);
+		opacity: 1;
+	}
+}
+@keyframes sunbeams {
+	0% {
+		transform: translateY(40%) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-40%) rotate(180deg);
+	}
+	100% {
+		transform: translateY(40%) rotate(360deg);
+	}
+	0%,
+	14%,
+	17%,
+	43%,
+	53%,
+	71%,
+	80%,
+	94%,
+	100% {
+		opacity: 0;
+	}
+	6%,
+	15%,
+	24%,
+	28%,
+	48%,
+	55%,
+	78%,
+	82%,
+	99% {
+		opacity: 1;
+	}
+} */

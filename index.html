@@ -4,27 +4,52 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/bebas.css"
+		/>
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/particle.css" />
 		<title>Automatic Journey</title>
 	</head>
 	<body>
+		<div class="heading">
+			<h2 class="header">Automatic Journey</h1>
+		</div>
 		<!-- particles.js container -->
 		<div id="particles-js"></div>
-		<div class="text">
+		<!-- <div class="text">
 			<h1 class="header">Automatic Journey</h1>
 			<p class="main">Kaam chaalu hai! Kal aana</p>
+		</div> -->
+		<!-- <div class="textcontainer">
+			<span class="particletext lines">Lines</span>
+		</div> -->
+		<div class="container">
+			<!-- <div class="data">Web Development</div>
+			<div class="data">Python</div>
+			<div class="data">Machine Learning</div>
+			<div class="data">App Development</div>
+			<div class="data">Competitive Coding</div> -->
+			<a id="btn" href="#">Web Development</a>
+			<a id="btn" href="#">App Development</a>
+			<a id="btn" href="#">Machine Learning</a>
+			<a id="btn" href="#">Python language</a>
+			<a id="btn" href="#">Competitive Coding</a>
 		</div>
 
 		<!-- scripts -->
-
+		<script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://codepen.io/z-/pen/2677821722cd9e02c2c882a17c5b2072"></script>
+		<script src="https://codepen.io/z-/pen/0a1bedbb8ca05b9afd329264fca7b921"></script>
+		<script src="bgjs/main.js"></script>
 		<script src="bgjs/particles.js"></script>
 		<script src="bgjs/js/app.js"></script>
 		<script>
-			            particlesJS.load('particles-js', 'bgjs/particles.json',
-			            function(){
-			                console.log('particles.json loaded...')
-			//             })
+			particlesJS.load("particles-js", "bgjs/particles.json", function () {
+				console.log("particles.json loaded...");
+			});
 			// var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
 			// particlesJS.load('particles', jsonUri, afterParticlesLoaded);
 		</script>
