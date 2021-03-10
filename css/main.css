@@ -16,14 +16,16 @@ body {
 	font-family: sans-serif;
 	color: white;
 	position: absolute;
-	background-image: linear-gradient(to bottom right, red, yellow);
+	background-image: linear-gradient(to bottom right, violet, red);
 	padding: 5px;
 	margin: auto;
 	top: 25%;
 	left: 40%;
 	right: 40%;
+	font-size: 18px;
 	border-radius: 5px;
 	text-align: center;
+	border: 2px solid white;
 }
 #btn {
 	border: 2px solid white;
@@ -46,7 +48,7 @@ body {
 	position: absolute;
 	top: -100%;
 	left: -100%;
-	background: linear-gradient(to bottom right, red, yellow);
+	background: linear-gradient(to bottom right, violet, red);
 	transition: all 0.5s;
 	z-index: -1;
 }
