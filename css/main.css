@@ -147,7 +147,17 @@ body {
 		width: 70%;
 	}
 }
-
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-family: "cardo";
+	letter-spacing: 2px;
+	font-size: 10px;
+	color: white;
+	text-align: center;
+}
 /* .particletext {
 	text-align: center;
 	font-size: 48px;
