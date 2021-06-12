@@ -63,7 +63,7 @@ body {
 			background: #212121;
 			transition: all .5s;
 			z-index: -1;
-			
+
 	}**/
 #btn:hover {
 	color: black;
@@ -147,6 +147,15 @@ body {
 		width: 70%;
 	}
 }
+
+.counter{
+	position: absolute;
+	z-index: 9000000;
+	background-color: white;
+	bottom: 0;
+	left:0;
+}
+
 .footer {
 	position: fixed;
 	left: 0;
